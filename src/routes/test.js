@@ -3,6 +3,7 @@ import { Router } from 'express';
 const router = Router();
 
 router.get("/test", (req, res) => {
+    return res.status(201).send({msg: "Hello"})
     console.log("test");
 });
 
